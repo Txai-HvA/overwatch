@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    <!--Bron: https://stackoverflow.com/questions/9943771/adding-a-favicon-to-a-static-html-page -->
+
+    <title>Overwatch - Heroes</title>
+    <script src="scripts/script.js"></script> 
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="heroes.html">Heroes</a>
+                </li>
+                <li>
+                    <a href="maps.html">Maps</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h1>Heroes</h1>
+            <p><strong>Overwatch</strong> heeft een divers roster van 31 heroes met elk zijn of haar:</p>
+                <ol>
+                    <li>unieke vaardigheden</li>
+                    <li>rol</li>
+                    <li>persoonlijkheid</li>
+                    <li>achtergrondverhaal</li>
+                </ol>
+                <p>Het volledige overzicht van de heroes zie je <i>onder Rollen</i>.</p>
+            <hr>
+            <h2>Rollen</h2>
+            <p>Er zijn drie rollen waar een hero onder kan vallen:</p>
+                <ol>
+                    <li>Damage</li>
+                    <li>Tank</li>
+                    <li>Support</li>
+                </ol>
+            <p>
+                De damage rol moet vooral schade toe brengen aan de tegenstander, 
+                de tanks beschermen het team en de supports houden het het team in leven.
+            </p>
+            <hr>
+        </article>    
+        <section>
+            <div class="heroButtons">
+                <button onclick="showAllHeroes()" on>Alle Heroes</button>
+                <button onclick="showDamage()">
+                    <img src="images/roles/damage.png" alt="Damage"> 
+                    <span class="buttonText">Damage</span>
+                </button>
+                <button onclick="showTanks()">
+                    <img src="images/roles/tank.png" alt="Tank"> 
+                    <span class="buttonText">Tank</span>
+                </button>
+                <button onclick="showSupports()">
+                    <img src="images/roles/support.png" alt="Support"> 
+                    <span class="buttonText">Support</span>
+                </button>
+            </div>
+            <ul>
+                <li id="ana">
+                    <figure>
+                        <a><img src="images/hero_portraits/ana.png" alt="Ana"></a>
+                        <figcaption>Ana</figcaption>
+                    </figure>
+                </li>
+
+                <li id="ashe">
+                    <figure>
+                        <a><img src="images/hero_portraits/ashe.png" alt="Ashe"></a>
+                        <figcaption>Ashe</figcaption>
+                    </figure>
+                </li>
+
+                <li id="baptiste">
+                    <figure>
+                        <a><img src="images/hero_portraits/baptiste.png" alt="Baptiste"></a>
+                        <figcaption>Baptiste</figcaption>
+                    </figure>
+                </li>
+
+                <li id="brigitte">
+                    <figure>
+                        <a><img src="images/hero_portraits/brigitte.png" alt="Brigitte"></a>
+                        <figcaption>Brigitte</figcaption>
+                    </figure>
+                </li>
+
+                <li id="dva">
+                    <figure>
+                        <a><img src="images/hero_portraits/d.va.png" alt="D.Va"></a>
+                        <figcaption>D.Va</figcaption>
+                    </figure>
+                </li>
+
+                <li id="doomfist">
+                    <figure>
+                        <a><img src="images/hero_portraits/doomfist.png" alt="Doomfist"></a>
+                        <figcaption>Doomfist</figcaption>
+                    </figure>
+                </li>
+
+                <li id="genji">
+                    <figure>
+                        <a><img src="images/hero_portraits/genji.png" alt="Genji"></a>
+                        <figcaption>Genji</figcaption>
+                    </figure>
+                </li>
+
+                <li id="hanzo">
+                    <figure>
+                        <a><img src="images/hero_portraits/hanzo.png" alt="Hanzo"></a>
+                        <figcaption>Hanzo</figcaption>
+                    </figure>
+                </li>
+
+                <li id="junkrat">
+                    <figure>
+                        <a><img src="images/hero_portraits/junkrat.png" alt="Junkrat"></a>
+                        <figcaption>Junkrat</figcaption>
+                    </figure>
+                </li>
+
+                <li id="lucio">
+                    <figure>
+                        <a><img src="images/hero_portraits/lúcio.png" alt="Lúcio"></a>
+                        <figcaption>Lúcio</figcaption>
+                    </figure>
+                </li>
+
+                <li id="mccree">
+                    <figure>
+                        <a><img src="images/hero_portraits/mccree.png" alt="McCree"></a>
+                        <figcaption>McCree</figcaption>
+                    </figure>
+                </li>
+
+                <li id="mei">
+                    <figure>
+                        <a><img src="images/hero_portraits/mei.png" alt="Mei"></a>
+                        <figcaption>Mei</figcaption>
+                    </figure>
+                </li>
+
+                <li id="mercy">
+                    <figure>
+                        <a><img src="images/hero_portraits/mercy.png" alt="Mercy"></a>
+                        <figcaption>Mercy</figcaption>
+                    </figure>
+                </li>
+
+                <li id="moira">
+                    <figure>
+                        <a><img src="images/hero_portraits/moira.png" alt="Moira"></a>
+                        <figcaption>Moira</figcaption>
+                    </figure>
+                </li>
+
+                <li id="orisa">
+                    <figure>
+                        <a><img src="images/hero_portraits/orisa.png" alt="Orisa"></a>
+                        <figcaption>Orisa</figcaption>
+                    </figure>
+                </li>
+
+                <li id="pharah">
+                    <figure>
+                        <a><img src="images/hero_portraits/pharah.png" alt="Pharah"></a>
+                        <figcaption>Pharah</figcaption>
+                    </figure>
+                </li>
+
+                <li id="reaper">
+                    <figure>
+                        <a><img src="images/hero_portraits/reaper.png" alt="Reaper"></a>
+                        <figcaption>Reaper</figcaption>
+                    </figure>
+                </li>
+
+                <li id="reinhardt">
+                    <figure>
+                        <a><img src="images/hero_portraits/reinhardt.png" alt="Reinhardt"></a>
+                        <figcaption>Reinhardt</figcaption>
+                    </figure>
+                </li>
+
+                <li id="sigma">
+                    <figure>
+                        <a><img src="images/hero_portraits/sigma.png" alt="Sigma"></a>
+                        <figcaption>Sigma</figcaption>
+                    </figure>
+                </li>
+
+                <li id="soldier">
+                    <figure>
+                        <a><img src="images/hero_portraits/soldier-76.png" alt="Soldier: 76"></a>
+                        <figcaption>Soldier: 76</figcaption>
+                    </figure>
+                </li>
+
+                <li id="sombra">
+                    <figure>
+                        <a href="sombra.html"><img src="images/hero_portraits/sombra.png" alt="Sombra"></a>
+                        <figcaption>Sombra</figcaption>
+                    </figure>
+                </li>
+                
+                <li id="symmetra">
+                    <figure>
+                        <a><img src="images/hero_portraits/symmetra.png" alt="Symmetra"></a>
+                        <figcaption>Symmetra</figcaption>
+                    </figure>
+                </li>
+
+                <li id="torbjorn">
+                    <figure>
+                        <a><img src="images/hero_portraits/torbjörn.png" alt="Torbjörn"></a>
+                        <figcaption>Torbjörn</figcaption>
+                    </figure>
+                </li>
+
+                <li id="tracer">
+                    <figure>
+                        <a><img src="images/hero_portraits/tracer.png" alt="Tracer"></a>
+                        <figcaption>Tracer</figcaption>
+                    </figure>
+                </li>
+
+                <li id="widowmaker">
+                    <figure>
+                        <a><img src="images/hero_portraits/widowmaker.png" alt="Widowmaker"></a>
+                        <figcaption>Widowmaker</figcaption>
+                    </figure>
+                </li>
+
+                <li id="winston">
+                    <figure>
+                        <a><img src="images/hero_portraits/winston.png" alt="Winston"></a>
+                        <figcaption>Winston</figcaption>
+                    </figure>
+                </li>
+
+                <li id="wreckingball">
+                    <figure>
+                        <a><img src="images/hero_portraits/wrecking-ball.png" alt="Wrecking Ball"></a>
+                        <figcaption>Wrecking Ball</figcaption>
+                    </figure>
+                </li>
+
+                <li id="zarya">
+                    <figure>
+                        <a><img src="images/hero_portraits/zarya.png" alt="Zarya"></a>
+                        <figcaption>Zarya</figcaption>
+                    </figure>
+                </li>
+
+                <li id="zenyatta">
+                    <figure>
+                        <a><img src="images/hero_portraits/zenyatta.png" alt="Zenyatta"></a>
+                        <figcaption>Zenyatta</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>
+            Bron: <a href="https://playoverwatch.com">playoverwatch.com</a><br>
+
+            Txai Pereira de Lacerda - Klas Paars
+        </p>
+    </footer>
+</body>
+
+</html>

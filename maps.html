@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    <!--Bron: https://stackoverflow.com/questions/9943771/adding-a-favicon-to-a-static-html-page -->
+
+    <title>Overwatch - Maps</title>
+    <script src="scripts/script.js"></script> 
+</head>
+
+<body>
+     <header>
+         <nav>
+             <ul>
+                 <li>
+                     <a href="index.html">Home</a>
+                 </li>
+                 <li>
+                     <a href="heroes.html">Heroes</a>
+                 </li>
+                 <li>
+                     <a href="maps.html">Maps</a>
+                 </li>
+             </ul>
+         </nav>
+     </header>
+     <main>
+        <article>
+            <h1>Gamemodes</h1>
+            <p>
+               De maps van Overwatch spelen zich af in diverse locaties van de wereld 
+               met elk een andere gamemode.
+            </p>
+            
+            <h2>1 Control</h2>
+            <p>
+               2 teams vechten voor 1 punt. Het eerste team die 2 rondes wint, wint the map. 
+            </p>
+            
+            <h2>2 Assault</h2>
+            <p>
+               Attackers moeten een aantal punten innemen.
+               Defenders moeten hun tegen houden tot dat de tijd voorbij is.
+            </p>
+            
+            <h2>3 Escort</h2>
+            <p>
+               Attackers moeten de "payload" begeleiden naar een aantal punten.
+               Defenders moeten hun tegen houden.
+            </p>
+            
+            <h2>4 Capture the Flag</h2>
+            <p>
+               Teams moeten elkaars vlag 3 keer proberen te bemachtingen om te winnen.
+            </p>
+            
+            <h2>5 Hybrid</h2>
+            <p>
+               Attackers moeten eerst de "payload" bemachtigen en vervolgens begeleiden 
+               naar een aantal punten. Defenders moeten hun tegen houden.
+            </p>
+            
+            <h2>6 Elimination</h2>
+            <p>
+               Elimineer alle tegenstanders om de ronde te winnen. Win 3 rondes om de map te winnen.
+               Beschikbaar in teams van 1, 3 of 6.
+            </p>
+            
+            <h2>7 Deathmatch</h2>
+            <p>
+               Spelers doen een race tegen de klok wie de meeste kills krijgt.
+            </p>
+            
+            <h2>8 Team Deathmatch</h2>
+            <p>
+               Teams doen een race tegen de klok wie de meeste kills krijgt.
+            </p>
+            <hr>
+        </article>    
+        <section>
+			<div class="mapButtons">
+				<button onclick="showAllMaps()">All Maps</button>
+				<button onclick="showControl()">Control</button>
+				<button onclick="showAssault()">Assault</button>
+				<button onclick="showEscort()">Escort</button>
+				<button onclick="showFlag()">Capture the Flag</button>
+				<button onclick="showHybrid()">Hybrid</button>
+				<button onclick="showElimination()">Elimination</button>
+				<button onclick="showDeathmatch()">Deathmatch</button>
+				<button onclick="showTeamDeathmatch()">Team Deathmatch</button>
+			</div>
+
+            <figure id="ayutthaya">
+                <img class="mapimg" src="images/maps/ayutthaya.jpg" alt="Ayutthaya">
+                <figcaption>Ayutthaya</figcaption>    
+            </figure>
+             
+            <figure id="black-forest">
+                <img class="mapimg" src="images/maps/black-forest.jpg" alt="Black Forest">
+                <figcaption>Black Forest</figcaption>    
+            </figure>
+
+            <figure id="blizzard-world">
+                <img class="mapimg" src="images/maps/blizzard-world.jpg" alt="Blizzard World">
+                <figcaption>Blizzard World</figcaption>    
+            </figure>
+
+            <figure id="busan">
+                <img class="mapimg" src="images/maps/busan.jpg" alt="Busan">
+                <figcaption>Busan</figcaption>    
+            </figure>
+
+            <figure id="castillo">
+                <img class="mapimg" src="images/maps/castillo.jpg" alt="Castillo">
+                <figcaption>Castillo</figcaption>    
+            </figure>
+ 
+            <figure id="chateau-guillard">
+                <img class="mapimg" src="images/maps/chateau-guillard.jpg" alt="Chateau Guillard">
+                <figcaption>Chateau Guillard</figcaption>    
+            </figure>   
+
+            <figure id="dorado">
+                <img class="mapimg" src="images/maps/dorado.jpg" alt="Dorado">
+                <figcaption>Dorado</figcaption>    
+           </figure>   
+
+           <figure id="ecopoint-antarctica">
+                <img class="mapimg" src="images/maps/ecopoint-antarctica.jpg" alt="Ecopoint: Antarctica">
+                <figcaption>Ecopoint: Antarctica</figcaption>    
+           </figure>              
+           
+           <figure id="eichenwalde">
+                <img class="mapimg" src="images/maps/eichenwalde.jpg" alt="Eichenwalde">
+                <figcaption>Eichenwalde</figcaption>    
+           </figure>  
+           
+           <figure id="hanamura">
+                <img class="mapimg" src="images/maps/hanamura.jpg" alt="Hanamura">
+                <figcaption>Hanamura</figcaption>    
+           </figure>  
+
+           <figure id="havana">
+                <img class="mapimg" src="images/maps/havana.jpg" alt="Havana">
+                <figcaption>Havana</figcaption>    
+           </figure>  
+
+           <figure id="hollywood">
+                <img class="mapimg" src="images/maps/hollywood.jpg" alt="Hollywood">
+                <figcaption>Hollywood</figcaption>    
+           </figure>  
+
+           <figure id="horizon-lunar-colony">
+                <img class="mapimg" src="images/maps/horizon-lunar-colony.jpg" alt="Horizon Lunar Colony">
+                <figcaption>Horizon Lunar Colony</figcaption>    
+           </figure>  
+
+           <figure id="ilios">
+                <img class="mapimg" src="images/maps/ilios.jpg" alt="Ilios">
+                <figcaption>Ilios</figcaption>    
+           </figure>  
+
+           <figure id="junkertown">
+                <img class="mapimg" src="images/maps/junkertown.jpg" alt="Junkertown">
+                <figcaption>Junkertown</figcaption>    
+           </figure>  
+
+           <figure id="kings-row">
+                <img class="mapimg" src="images/maps/kings-row.jpg" alt="King's Row">
+                <figcaption>King's Row</figcaption>    
+           </figure>  
+
+           <figure id="lijiang-tower">
+                <img class="mapimg" src="images/maps/lijiang-tower.jpg" alt="Lijiang Tower">
+                <figcaption>Lijiang Tower</figcaption>    
+           </figure>  
+
+           <figure id="nepal">
+                <img class="mapimg" src="images/maps/nepal.jpg" alt="Nepal">
+                <figcaption>Necropolis</figcaption>    
+           </figure>  
+
+           <figure id="necropolis">
+                <img class="mapimg" src="images/maps/necropolis.jpg" alt="Necropolis">
+                <figcaption>Necropolis</figcaption>    
+           </figure> 
+
+           <figure id="numbani">
+                <img class="mapimg" src="images/maps/numbani.jpg" alt="Numbani">
+                <figcaption>Numbani</figcaption>    
+           </figure>  
+
+           <figure id="oasis">
+                <img class="mapimg" src="images/maps/oasis.jpg" alt="Oasis">
+                <figcaption>Oasis</figcaption>    
+           </figure>  
+
+           <figure id="paris">
+                <img class="mapimg" src="images/maps/paris.jpg" alt="Paris">
+                <figcaption>Paris</figcaption>    
+           </figure>  
+
+           <figure id="petra">
+                <img class="mapimg" src="images/maps/petra.jpg" alt="Petra">
+                <figcaption>Petra</figcaption>    
+           </figure>  
+
+           <figure id="rialto">
+                <img class="mapimg" src="images/maps/rialto.jpg" alt="Rialto">
+                <figcaption>Rialto</figcaption>    
+           </figure>  
+
+           <figure id="route-66">
+                <img class="mapimg" src="images/maps/route-66.jpg" alt="Route 66">
+                <figcaption>Route 66</figcaption>    
+           </figure>  
+
+           <figure id="temple-of-anubis">
+                <img class="mapimg" src="images/maps/temple-of-anubis.jpg" alt="Temple of Anubis">
+                <figcaption>Temple of Anubis</figcaption>    
+           </figure>  
+
+           <figure id="volskaya-industries">
+                <img class="mapimg" src="images/maps/volskaya-industries.jpg" alt="Volskaya Industries">
+                <figcaption>Volskaya Industries</figcaption>    
+           </figure>  
+
+           <figure id="watchpoint-gibraltar">
+                <img class="mapimg" src="images/maps/watchpoint-gibraltar.jpg" alt="Watchpoint: Gibraltar">
+                <figcaption>Watchpoint: Gibraltar</figcaption>    
+           </figure>  
+        </section>
+    </main>
+    <footer>
+        <p>
+            Bron: <a href="https://playoverwatch.com">playoverwatch.com</a><br>
+
+            Txai Pereira de Lacerda - Klas Paars
+        </p>
+    </footer>
+</body>
+
+</html>
